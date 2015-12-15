@@ -1,9 +1,0 @@
-book
-song
-movie
-color
-season
-person
-food
-website
-bot

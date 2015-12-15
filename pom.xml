@@ -1,17 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.derpgroup.quip</groupId>
-  <artifactId>quip-project</artifactId>
+  <groupId>com.derpgroup.friendfinder</groupId>
+  <artifactId>friendfinder-project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Quip</name>
+  <name>FriendFinder</name>
 
   <modules>
     <module>service</module>
   </modules>
 
   <properties>
-    <project.mainClass>com.derpgroup.quip.App</project.mainClass>
+    <project.mainClass>com.derpgroup.friendfinder.App</project.mainClass>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.jdkVersion>1.8</project.build.jdkVersion>
     <project.releaseRepo>file://~/.m2/repository/</project.releaseRepo>
@@ -30,9 +30,9 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:git:git@github.com:DERP-group/quip.git</connection>
-    <developerConnection>scm:git:git@github.com:DERP-group/quip.git</developerConnection>
-    <url>http://github.com/DERP-group/quip</url>
+    <connection>scm:git:git@github.com:DERP-group/friendfinder.git</connection>
+    <developerConnection>scm:git:git@github.com:DERP-group/friendfinder.git</developerConnection>
+    <url>http://github.com/DERP-group/friendfinder</url>
   </scm>
 
   <licenses>

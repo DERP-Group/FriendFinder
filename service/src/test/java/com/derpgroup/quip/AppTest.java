@@ -33,11 +33,10 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import com.codahale.metrics.health.HealthCheckRegistry;
-import com.derpgroup.quip.App;
-import com.derpgroup.quip.bots.complibot.resource.CompliBotAlexaResource;
-import com.derpgroup.quip.bots.insultibot.resource.InsultiBotAlexaResource;
-import com.derpgroup.quip.configuration.MainConfig;
-import com.derpgroup.quip.health.BasicHealthCheck;
+import com.derpgroup.friendfinder.App;
+import com.derpgroup.friendfinder.configuration.MainConfig;
+import com.derpgroup.friendfinder.health.BasicHealthCheck;
+import com.derpgroup.friendfinder.resource.FriendFinderAlexaResource;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AppTest {
@@ -63,7 +62,6 @@ public class AppTest {
 
     // Verify that health checks and resources are correctly registered
     verify(mockHealthChecks).register(Matchers.matches("basics"), Matchers.any(BasicHealthCheck.class));
-    verify(mockJersey).register(Matchers.isA(CompliBotAlexaResource.class));
-    verify(mockJersey).register(Matchers.isA(InsultiBotAlexaResource.class));
+    verify(mockJersey).register(Matchers.isA(FriendFinderAlexaResource.class));
   }
 }

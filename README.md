@@ -1,6 +1,6 @@
-# Quip
+# FriendFinder
 
-Shared service for various one-liner bots (like CompliBot)
+Service to locate your friends in online communities
 
 
 # Compiling
@@ -10,16 +10,16 @@ Shared service for various one-liner bots (like CompliBot)
 
 # Running
 
-`java -jar service/target/quip-service.jar server quip.json`
+`java -jar service/target/friendfinder-service.jar server friendfinder.json`
 
 
 # Configuration
 
 Refer to the Dropwizard configuration module for framework-specific configuration (logging, HTTP ports, etc.): http://www.dropwizard.io/manual/configuration.html
 
-See `quip.json` for an example configuration file suitable for a development environment.
+See `friendfinder.json` for an example configuration file suitable for a development environment.
 
-See `quip_local.json` for an example configuration file suitable for local development.
+See `friendfinder_local.json` for an example configuration file suitable for local development.
 
 ## Enabling SSL
 

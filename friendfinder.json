@@ -1,0 +1,41 @@
+{
+  "friendFinderConfig":{},
+  "server": {
+    "applicationConnectors": [
+      {
+        "type": "http",
+        "port" : 9080
+      },
+      {
+        "type": "https",
+        "port" : 9443,
+        "keyStorePath": "/var/lib/friendfinder/keystore.jks",
+        "keyStorePassword": "changeit",
+        "trustStorePath": "/usr/lib/jvm/jre/lib/security/cacerts",
+        "certAlias": "selfsigned"
+      }
+    ],
+    "adminConnectors": [
+      {
+        "type": "http",
+        "port": 9081
+      }
+    ]
+  },
+  "logging": {
+    "appenders": [
+      {
+        "type": "file",
+        "currentLogFilename": "/var/log/friendfinder/friendfinder.log",
+        "archivedLogFilenamePattern": "/var/log/friendfinder/friendfinder-%d.log",
+        "archivedFileCount": 5
+      }
+    ],
+    "level": "INFO",
+    "loggers": {
+      "com": {
+        "derpgroup": "DEBUG"
+      }
+    }
+  }
+}
