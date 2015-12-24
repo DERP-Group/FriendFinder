@@ -104,7 +104,7 @@ public class FriendFinderManager extends AbstractManager {
         }
 
         GetPlayerSummariesRequest playerSummariesRequest = SteamWebApiRequestFactory.createGetPlayerSummariesRequest(friends);
-        List<String> onlineFriends = new LinkedList<String>();
+        //List<String> onlineFriends = new LinkedList<String>();
         Map<Integer, String> stateValues = new HashMap<Integer, String>();
         stateValues.put(1, " is online.  ");
         stateValues.put(2, " is online, but busy.  ");

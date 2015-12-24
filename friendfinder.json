@@ -1,5 +1,7 @@
 {
-  "friendFinderConfig":{},
+  "friendFinderConfig":{
+    "apiKey":"9E5D61DD0D1A99F0235D91B1139A163B"
+  },
   "server": {
     "applicationConnectors": [
       {

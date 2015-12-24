@@ -1,0 +1,8 @@
+{
+  "intents": [
+    {
+      "intent": "STEAM_FRIENDS",
+      "slots": []
+    }
+  ]
+}
